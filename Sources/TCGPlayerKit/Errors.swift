@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum TCGPlayerKitError: Error, CustomStringConvertible {
-    case networkingError(String)
-    case emptyIds
+public enum TCGPlayerKitError: Error, CustomStringConvertible {
+    public case networkingError(String)
+    public case emptyIds
 
     var description: String {
         switch self {

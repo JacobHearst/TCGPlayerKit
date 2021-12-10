@@ -8,19 +8,19 @@
 import Foundation
 
 public struct ProductPriceInfo: Decodable {
-    let productId: Int
-    let lowPrice: Double?
-    let midPrice: Double?
-    let highPrice: Double?
-    let marketPrice: Double?
-    let directLowPrice: Double?
-    let subTypeName: String
+    public let productId: Int
+    public let lowPrice: Double?
+    public let midPrice: Double?
+    public let highPrice: Double?
+    public let marketPrice: Double?
+    public let directLowPrice: Double?
+    public let subTypeName: String
 }
 
 public struct ProductMarketPriceResponse: Decodable {
-    let success: Bool
-    let errors: [String]
-    let results: [ProductPriceInfo]
+    public let success: Bool
+    public let errors: [String]
+    public let results: [ProductPriceInfo]
 }
 
 struct BearerToken: Decodable {
